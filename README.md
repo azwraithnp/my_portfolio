@@ -1,2 +1,1 @@
-# my_portfolio
-Portfolio site
+# sass-bootstrap-template

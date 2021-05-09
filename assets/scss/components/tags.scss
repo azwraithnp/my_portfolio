@@ -1,0 +1,88 @@
+.tags{
+  li{
+    display: inline-block;
+    font-size: $font-size-t5;
+    line-height: $line-height-t5;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.14);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    @media screen and (max-width: 990px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.general-tags { 
+  li{
+    display: inline-block;
+    font-size: $font-size-t5;
+    line-height: $line-height-t5;
+    background-color: #1d90dd;
+    color: white;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.14);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    @media screen and (max-width: 990px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.frontend-tags { 
+  li{
+    display: inline-block;
+    font-size: $font-size-t5;
+    line-height: $line-height-t5;
+    background-color: #1fbb7a;
+    color: white;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.14);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    @media screen and (max-width: 990px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.backend-tags { 
+  li{
+    display: inline-block;
+    font-size: $font-size-t5;
+    line-height: $line-height-t5;
+    background-color: #b30c0c;
+    color: white;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.14);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    @media screen and (max-width: 990px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.devops-tags { 
+  li{
+    display: inline-block;
+    font-size: $font-size-t5;
+    line-height: $line-height-t5;
+    background-color: #574b4b;
+    color: white;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.14);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 3px;
+
+    @media screen and (max-width: 990px) {
+      margin-bottom: 10px;
+    }
+  }
+}

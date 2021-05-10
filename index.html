@@ -18,6 +18,18 @@
       href="https://cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/cloudinary-video-player@1.5.3/dist/cld-video-player.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://unpkg.com/cloudinary-core@latest/cloudinary-core-shrinkwrap.min.js"
+      type="text/javascript"
+    ></script>
+    <script
+      src="https://unpkg.com/cloudinary-video-player@1.5.3/dist/cld-video-player.min.js"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <!--Switcher-->
@@ -321,6 +333,7 @@
       <div class="portfolio-cards">
         <div
           class="row project-card"
+          id="akku_modal"
           data-toggle="modal"
           data-target="#portfolioModal"
           data-portfolio-tag="web-sites"
@@ -357,7 +370,8 @@
         <div
           class="row project-card"
           data-toggle="modal"
-          data-target="#portfolioModal"
+          id="infytrip_modal"
+          data-target="#infytripModal"
           data-portfolio-tag="web-sites"
         >
           <div class="col-md-6 col-lg-5 project-card__img">
@@ -396,7 +410,7 @@
         <div
           class="row project-card"
           data-toggle="modal"
-          data-target="#portfolioModal"
+          data-target="#ebidhyaModal"
           data-portfolio-tag="web-sites"
         >
           <div class="col-md-6 col-lg-5 project-card__img">
@@ -431,7 +445,8 @@
         <div
           class="row project-card"
           data-toggle="modal"
-          data-target="#portfolioModal"
+          id="kunyov2_modal"
+          data-target="#kunyov2Modal"
           data-portfolio-tag="web-sites"
         >
           <div class="col-md-6 col-lg-5 project-card__img">
@@ -463,7 +478,8 @@
         <div
           class="row project-card"
           data-toggle="modal"
-          data-target="#portfolioModal"
+          id="marketing_modal"
+          data-target="#marketingModal"
           data-portfolio-tag="web-sites"
         >
           <div class="col-md-6 col-lg-5 project-card__img">
@@ -501,7 +517,8 @@
         <div
           class="row project-card"
           data-toggle="modal"
-          data-target="#portfolioModal"
+          id="logistics_modal"
+          data-target="#logisticsModal"
           data-portfolio-tag="web-sites"
         >
           <div class="col-md-6 col-lg-5 project-card__img">
@@ -533,7 +550,7 @@
         <div
           class="row project-card"
           data-toggle="modal"
-          data-target="#portfolioModal"
+          data-target="#karmalayaModal"
           data-portfolio-tag="web-sites"
         >
           <div class="col-md-6 col-lg-5 project-card__img">
@@ -565,7 +582,7 @@
         <div
           class="row project-card"
           data-toggle="modal"
-          data-target="#portfolioModal"
+          data-target="#fahrenheitModal"
           data-portfolio-tag="web-sites"
         >
           <div class="col-md-6 col-lg-5 project-card__img">
@@ -599,7 +616,7 @@
         <div
           class="row project-card"
           data-toggle="modal"
-          data-target="#portfolioModal"
+          data-target="#aspireModal"
           data-portfolio-tag="web-sites"
         >
           <div class="col-md-6 col-lg-5 project-card__img">
@@ -661,11 +678,11 @@
               <li>CronJobs</li>
               <li>Express</li>
               <li>MongoDB</li>
-              <li>Solidity</li>
+              <li class="mt-2">Solidity</li>
             </ul>
-            <a href="" class="project-card__link" target="_blank"
+            <!-- <a href="" class="project-card__link" target="_blank"
               >View Details</a
-            >
+            > -->
             <!-- <a href="" class="project-card__link">www.coolphoto.com</a> -->
           </div>
         </div>
@@ -696,9 +713,9 @@
               <li>Chatkit</li>
               <li>Solidity</li>
             </ul>
-            <a href="" class="project-card__link" target="_blank"
+            <!-- <a href="" class="project-card__link" target="_blank"
               >View Details</a
-            >
+            > -->
             <!-- <a href="" class="project-card__link">www.coolphoto.com</a> -->
           </div>
         </div>
@@ -826,39 +843,747 @@
             </button>
           </div>
           <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
-            <p class="portfolio-modal__title">
-              Mobile and desktop app for London hostel store
+            <p
+              class="portfolio-modal__title"
+              style="color: #dc3545 !important; font-weight: bold"
+            >
+              AKKU.GG Gaming Ecommerce
             </p>
-            <img
+            <!-- <img
               class="portfolio-modal__img"
               src="assets/img/img_project_1_mono.png"
               alt="modal_img"
-            />
+            /> -->
+            <div style="max-width: px">
+              <video
+                id="doc-player"
+                controls
+                autoplay
+                muted
+                class="cld-video-player cld-fluid"
+              ></video>
+            </div>
             <p class="portfolio-modal__description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamcolaboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
-              ut perspiciatis undeomnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia conse.
+              Full-fledged e-commerce for gaming accessories and digital
+              products with distributors/retailers functionality as well as
+              digital wallet included within the platform. Other standard
+              e-commerce functionalities such as inventory management, order
+              management, newsletter, custom roles are included.
             </p>
             <div class="portfolio-modal__link">
-              <a href="">www.superapp.com</a>
+              <a href="https://akku.gg" style="color: #dc3545 !important"
+                >akku.gg</a
+              >
+            </div>
+            <div class="portfolio-modal__link">
+              <p class="portfolio-modal__stack-title">
+                Company:
+                <span style="color: #dc3545"
+                  >Quantum I.T. Solutions, Nepal</span
+                >
+              </p>
             </div>
             <div class="portfolio-modal__stack">
               <p class="portfolio-modal__stack-title">Using stack:</p>
               <ul class="tags">
-                <li>html5</li>
-                <li>css3</li>
-                <li>JavaScript</li>
-                <li>bower</li>
-                <li>grunt</li>
+                <li style="background-color: #dc3545 !important; color: white">
+                  ReactJS
+                </li>
+                <li style="background-color: #dc3545 !important; color: white">
+                  Redux
+                </li>
+                <li style="background-color: #dc3545 !important; color: white">
+                  Material UI
+                </li>
+                <li style="background-color: #dc3545 !important; color: white">
+                  Django
+                </li>
+                <li style="background-color: #dc3545 !important; color: white">
+                  NodeJS
+                </li>
+                <li style="background-color: #dc3545 !important; color: white">
+                  PostgreSQL
+                </li>
+                <li
+                  class="mt-2"
+                  style="background-color: #dc3545 !important; color: white"
+                >
+                  Firebase
+                </li>
+                <li style="background-color: #dc3545 !important; color: white">
+                  Redis
+                </li>
+                <li style="background-color: #dc3545 !important; color: white">
+                  Celery
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal -->
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade portfolio-modal"
+      id="infytripModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p
+              class="portfolio-modal__title"
+              style="color: #06a69e !important; font-weight: bold"
+            >
+              Infytrip - Hotel Booking Website
+            </p>
+            <!-- <img
+              class="portfolio-modal__img"
+              src="assets/img/img_project_1_mono.png"
+              alt="modal_img"
+            /> -->
+            <div style="max-width: px">
+              <video
+                id="infytrip-client-player"
+                controls
+                autoplay
+                muted
+                class="cld-video-player cld-fluid"
+              ></video>
+            </div>
+            <div style="max-width: px">
+              <video
+                id="infytrip-dashboard-player"
+                controls
+                autoplay
+                muted
+                class="cld-video-player cld-fluid"
+              ></video>
+            </div>
+            <p class="portfolio-modal__description">
+              Hotel browsing/booking website for customers where they have a
+              wide variety of options to choose from. Packages/Recommendations
+              allow for an interactive way to browse the platform. Convenient
+              booking flow helps the users automate most of thier booking
+              worries to the system itself. Hotel dashboard is another module of
+              this sytem for users as well as property owners.
+            </p>
+
+            <div class="portfolio-modal__link">
+              <p class="portfolio-modal__stack-title">
+                Company:
+                <span style="color: #06a69e">Infynitee, Australia</span>
+              </p>
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li style="background-color: #06a69e !important; color: white">
+                  ReactJS
+                </li>
+                <li style="background-color: #06a69e !important; color: white">
+                  Redux
+                </li>
+                <li style="background-color: #06a69e !important; color: white">
+                  AntDesign
+                </li>
+                <li style="background-color: #06a69e !important; color: white">
+                  AntV
+                </li>
+                <li style="background-color: #06a69e !important; color: white">
+                  Django
+                </li>
+                <li style="background-color: #06a69e !important; color: white">
+                  PostgreSQL
+                </li>
+                <li style="background-color: #06a69e !important; color: white">
+                  Redis
+                </li>
+                <li style="background-color: #06a69e !important; color: white">
+                  Celery
+                </li>
+                <li
+                  class="mt-2"
+                  style="background-color: #06a69e !important; color: white"
+                >
+                  Firebase
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal -->
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade portfolio-modal"
+      id="ebidhyaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p
+              class="portfolio-modal__title"
+              style="color: #143f91 !important; font-weight: bold"
+            >
+              Ebidhya
+            </p>
+            <!-- <img
+              class="portfolio-modal__img"
+              src="assets/img/img_project_1_mono.png"
+              alt="modal_img"
+            /> -->
+            <div style="max-width: px">
+              <img
+                class=""
+                src="assets/img/ebidhya.png"
+                alt="project-img"
+                height="400"
+                width="100%"
+                style="object-fit: cover"
+              />
+            </div>
+            <p class="portfolio-modal__description">
+              Following in the footsteps of the likes of Udemy/Udacity, an
+              e-learning platform caterred to the Nepali audience with courses
+              relevant to the national population. Digital payment through
+              payment gateways and analytics for both students and teachers.
+              Admin panel for adding courses, performing administrative tasks,
+              setting watchable hours for each course and assisting the
+              students.
+            </p>
+
+            <div class="portfolio-modal__link">
+              <a
+                class="portfolio-modal__stack-title"
+                href="https://test.ebidhya.com"
+                target="_blank"
+              >
+                test.ebidhya.com
+              </a>
+            </div>
+
+            <div class="portfolio-modal__link">
+              <p class="portfolio-modal__stack-title">
+                Company:
+                <span style="color: #143f91"
+                  >Quantum I.T. Solutions, Nepal</span
+                >
+              </p>
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li style="background-color: #143f91 !important; color: white">
+                  React
+                </li>
+                <li style="background-color: #143f91 !important; color: white">
+                  Redux
+                </li>
+                <li style="background-color: #143f91 !important; color: white">
+                  AntDesign
+                </li>
+                <li style="background-color: #143f91 !important; color: white">
+                  Django
+                </li>
+                <li style="background-color: #143f91 !important; color: white">
+                  PostgreSQL
+                </li>
+                <li style="background-color: #143f91 !important; color: white">
+                  Firebase
+                </li>
+                <li
+                  class="mt-2"
+                  style="background-color: #143f91 !important; color: white"
+                >
+                  Twilio
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal -->
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade portfolio-modal"
+      id="kunyov2Modal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p
+              class="portfolio-modal__title"
+              style="color: #143f91 !important; font-weight: bold"
+            >
+              Kunyo V2
+            </p>
+            <!-- <img
+             class="portfolio-modal__img"
+             src="assets/img/img_project_1_mono.png"
+             alt="modal_img"
+           /> -->
+            <div style="max-width: px">
+              <video
+                id="kunyov2-player"
+                controls
+                autoplay
+                muted
+                class="cld-video-player cld-fluid"
+              ></video>
+            </div>
+            <p class="portfolio-modal__description">
+              Migrating the already established Kunyo (www.kunyo.co) platform
+              into a new age by using the industry standard technologies as well
+              as revamping the UI/UX to cater a newer generation of consumers
+              while keeping the performance, SEO as well as security intact.
+            </p>
+
+            <div class="portfolio-modal__link">
+              <p class="portfolio-modal__stack-title">
+                Company:
+                <span style="color: #143f91">Kunyo, Hong Kong</span>
+              </p>
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li>NextJS</li>
+                <li>AntDesign</li>
+                <li>Vercel</li>
+                <li>Laravel</li>
+                <li>Firebase</li>
+                <li>MySQL</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal -->
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade portfolio-modal"
+      id="marketingModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p
+              class="portfolio-modal__title"
+              style="color: #143f91 !important; font-weight: bold"
+            >
+              Kunyo Marketing
+            </p>
+            <!-- <img
+             class="portfolio-modal__img"
+             src="assets/img/img_project_1_mono.png"
+             alt="modal_img"
+           /> -->
+            <div style="max-width: px">
+              <video
+                id="marketing-player"
+                controls
+                autoplay
+                muted
+                class="cld-video-player cld-fluid"
+              ></video>
+            </div>
+            <p class="portfolio-modal__description">
+              A multi-purpose web platform built for providing marketing
+              consultancy to the general public as well as serve as a
+              marketplace for courses on digital marketing serving a specific
+              niche. Order management with digital payment gateway and referral
+              system are the standard functionalities included among others.
+            </p>
+
+            <div class="portfolio-modal__link">
+              <p class="portfolio-modal__stack-title">
+                Company:
+                <span style="color: #143f91">Kunyo, Nepal</span>
+              </p>
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li>NextJS</li>
+                <li>AntDesign</li>
+                <li>Vercel</li>
+                <li>Django</li>
+                <li>PostgreSQL</li>
+                <li>Firebase</li>
+                <li class="mt-2">Zoom API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal -->
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade portfolio-modal"
+      id="logisticsModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p
+              class="portfolio-modal__title"
+              style="color: #143f91 !important; font-weight: bold"
+            >
+              Kunyo Logistics
+            </p>
+            <!-- <img
+             class="portfolio-modal__img"
+             src="assets/img/img_project_1_mono.png"
+             alt="modal_img"
+           /> -->
+            <div style="max-width: px">
+              <video
+                id="logistics-player"
+                controls
+                autoplay
+                muted
+                class="cld-video-player cld-fluid"
+              ></video>
+            </div>
+            <p class="portfolio-modal__description">
+              A managerial platform for Kunyo enterprise for their logistics and
+              inventory management needs. It facilitates useful features such as
+              custom roles, staff permissions, smart inventory management,
+              infographics and statistical analysis.
+            </p>
+
+            <div class="portfolio-modal__link">
+              <p class="portfolio-modal__stack-title">
+                Company:
+                <span style="color: #143f91">Quantum I.T. Kunyo, Nepal</span>
+              </p>
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li>ReactJS</li>
+                <li>Reactstrap</li>
+                <li>NodeJS</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Redis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal -->
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade portfolio-modal"
+      id="karmalayaModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p
+              class="portfolio-modal__title"
+              style="color: #419b76 !important; font-weight: bold"
+            >
+              Karmalaya Foundation
+            </p>
+            <!-- <img
+              class="portfolio-modal__img"
+              src="assets/img/img_project_1_mono.png"
+              alt="modal_img"
+            /> -->
+            <div style="max-width: px">
+              <img
+                class=""
+                src="assets/img/karmalaya.png"
+                alt="project-img"
+                height="400"
+                width="100%"
+                style="object-fit: cover"
+              />
+            </div>
+            <p class="portfolio-modal__description">
+              An informational and CMS management website for a non profit
+              organization of Nepal, Karmalaya Foundation. It shows basic
+              information about the organization, the handicrafts provided as
+              well as blog sections to remain updated. The information is
+              managed in the admin panel by administrative staffs.
+            </p>
+
+            <div class="portfolio-modal__link">
+              <p class="portfolio-modal__stack-title">
+                Company:
+                <span style="color: #419b76"
+                  >Quantum I.T. Solutions, Nepal</span
+                >
+              </p>
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li style="background-color: #419b76 !important; color: white">
+                  Gulp
+                </li>
+                <li style="background-color: #419b76 !important; color: white">
+                  EJS
+                </li>
+                <li style="background-color: #419b76 !important; color: white">
+                  NodeJS
+                </li>
+                <li style="background-color: #419b76 !important; color: white">
+                  Express
+                </li>
+                <li style="background-color: #419b76 !important; color: white">
+                  MongoDB
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal -->
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade portfolio-modal"
+      id="fahrenheitModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p
+              class="portfolio-modal__title"
+              style="color: #ee2d33 !important; font-weight: bold"
+            >
+              Fahrenheit Ticketing System
+            </p>
+            <!-- <img
+             class="portfolio-modal__img"
+             src="assets/img/img_project_1_mono.png"
+             alt="modal_img"
+           /> -->
+            <div style="max-width: px">
+              <img
+                class=""
+                src="assets/img/ticketing.png"
+                alt="project-img"
+                height="400"
+                width="100%"
+                style="object-fit: cover"
+              />
+            </div>
+            <p class="portfolio-modal__description">
+              A smart ticketing platform provided to Fahrenheit club of Nepal
+              which can help maintain social distancing in the context of
+              Covid-19. Users can register for tickets on the platform and they
+              are provided with a smart QRCode that they can redeem during the
+              event. The QRCode also contains information about any extra
+              benefits/VIP previlidges that ticket may contain.
+            </p>
+
+            <div class="portfolio-modal__link">
+              <p class="portfolio-modal__stack-title">
+                Company:
+                <span style="color: #ee2d33">Fahrenheit Club, Nepal</span>
+              </p>
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li style="background-color: #ee2d33 !important; color: white">
+                  EJS
+                </li>
+                <li style="background-color: #ee2d33 !important; color: white">
+                  NodeJS
+                </li>
+                <li style="background-color: #ee2d33 !important; color: white">
+                  Express
+                </li>
+                <li style="background-color: #ee2d33 !important; color: white">
+                  Nodemailer
+                </li>
+                <li style="background-color: #ee2d33 !important; color: white">
+                  MongoDB
+                </li>
+                <li
+                  style="background-color: #ee2d33 !important; color: white"
+                  class="mt-2"
+                >
+                  Atlas Charts
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Modal -->
+
+    <!-- Portfolio Modal -->
+    <div
+      class="modal fade portfolio-modal"
+      id="aspireModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body col-md-11 col-lg-9 ml-auto mr-auto">
+            <p class="portfolio-modal__title" style="font-weight: bold">
+              ASPIRE POS Billing
+            </p>
+            <!-- <img
+              class="portfolio-modal__img"
+              src="assets/img/img_project_1_mono.png"
+              alt="modal_img"
+            /> -->
+
+            <img
+              class=""
+              src="assets/img/aspire.png"
+              alt="project-img"
+              height="400"
+              width="100%"
+              style="object-fit: cover"
+            />
+            <p class="portfolio-modal__description">
+              An enterprise software consisting of Accounting and POS modules
+              for businesses and accounting firms. It consisted of financial
+              components such as Vouchers, Profit and Loss Accounts, Trial
+              Balance and for running POS operations, there were components
+              consisted of Inventory management, Barcode printer and scanner and
+              Invoice management.
+            </p>
+
+            <div class="portfolio-modal__link">
+              <p class="portfolio-modal__stack-title">
+                Company:
+                <span>SnigdhTech & Business Solutions Pvt. Ltd., Nepal</span>
+              </p>
+            </div>
+            <div class="portfolio-modal__stack">
+              <p class="portfolio-modal__stack-title">Using stack:</p>
+              <ul class="tags">
+                <li style="background-color: #eaedef">ReactJS</li>
+                <li style="background-color: #eaedef">Context API</li>
+                <li style="background-color: #eaedef">Java Springboot</li>
+                <li style="background-color: #eaedef">MySQL</li>
+                <li style="background-color: #eaedef">Jenkins</li>
               </ul>
             </div>
           </div>

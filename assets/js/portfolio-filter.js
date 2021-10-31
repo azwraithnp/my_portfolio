@@ -24,6 +24,21 @@ $('#infytrip_modal').on('click', function (e) {
   );
 });
 
+$('#dizhunk_modal').on('click', function (e) {
+  var cld = cloudinary.Cloudinary.new({ cloud_name: 'due5usvkm' });
+  var demoplayer = cld.videoPlayer('dizhunk-client-player').width(600);
+  demoplayer.source(
+    'https://res.cloudinary.com/azwraith/video/upload/v1626434554/dizhunk-client.mov'
+  );
+
+  var cld2 = cloudinary.Cloudinary.new({ cloud_name: 'due5usvkm' });
+  var demoplayer2 = cld2.videoPlayer('dizhunk-dashboard-player').width(600);
+  demoplayer2.source(
+    'https://res.cloudinary.com/azwraith/video/upload/v1626434513/dizhunk-admin.mov'
+  );
+});
+
+
 $('#kunyov2_modal').on('click', function (e) {
   var cld = cloudinary.Cloudinary.new({ cloud_name: 'due5usvkm' });
   var demoplayer = cld.videoPlayer('kunyov2-player').width(600);
